@@ -10,7 +10,7 @@ async function main(){
     const sc = new createInterface({input, output});
 
     let S= Number( await sc.question("entrer la somme initiale placée sur un compte : "));
-    let i = Number(await sc.question("interet offert pa la banque : "));
+    let i = Number(await sc.question("interet offert par la banque : "));
     let N = Number(await sc.question("nombre  d'années de placement de la somme: "));
 
     i = i/100;
