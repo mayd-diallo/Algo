@@ -1,3 +1,8 @@
+/* Exercice 1.5 : 
+Calcul d’intérêts Lire la somme initiale S placée sur un compte, l'intérêt i offert par la banque et le nombre N d'années de placement de la somme S. Calculez la valeur acquise par la somme S placée pendant N années : 
+▪ avec un intérêt simple : S ( 1 + N * i ) 
+▪ avec un intérêt composé : S ( 1 + i )N */
+
 import { createInterface } from "node:readline/promises";
 import { stdin as input, stdout as output} from "node:process";
 
@@ -17,6 +22,4 @@ async function main(){
     console.log(`avec interetcompose : ${interetCompose.toFixed(2)}`);
     sc.close();
 }
-await main();
-
-
+    await main();

@@ -1,3 +1,6 @@
+/* exercice : rechercher les diviseurs d'un nombre lire un nombre entier et déterminer tous ces diviseurs autres que 1 et lui-mêe */
+
+
 import { createInterface } from "readline/promises";
 import { stdin as input, stdout as output } from "process";
 
@@ -15,10 +18,10 @@ async function main() {
     
     let diviseurs = [];
     
-    for (let i = 2; i < nombre; i++) {  // Pas de point-virgule ici !
+    for (let i = 2; i < nombre; i++) { 
         if (nombre % i === 0) {
             diviseurs.push(i);
-        }
+        };
     }
     
     if (diviseurs.length === 0) {
@@ -31,5 +34,5 @@ async function main() {
 }
 
 await main();
-
+ 
 
