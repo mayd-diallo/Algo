@@ -20,6 +20,7 @@ async function main(){
     console.log(`la valeur acquise par la somme ${S} placée pendant ${N} equivaut : `);
     console.log(`avec interet simple : ${interetSimple.toFixed(2)}`);
     console.log(`avec interetcompose : ${interetCompose.toFixed(2)}`);
+    
     sc.close();
 }
     await main();
