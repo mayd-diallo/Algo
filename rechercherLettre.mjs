@@ -52,4 +52,4 @@ async function main() {
     console.log(`nbdefois ou la lettre est presente : ${compteur}`)
     sc.close(); // fermer le scanner
 }
-await main() //Appeler lefonction
+await main() //Appeler la fonction
