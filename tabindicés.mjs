@@ -9,25 +9,28 @@ import { stdin as input, stdout as output } from "process";
 
 async function main() {
     const sc = createInterface({ input, output });
-    let texte = await sc.question('entrez un texte au moins de 120 lettres');
+    var texte= '';
+    texte = await sc.question('entrez un texte au moins de 120 lettres');
 
+//verifier si texte se termine avec un point
 
     if (texte.endsWith('.')){
+// montrer qu'on peut retrancher un caractère dans un texte
         texte = texte.slice(0,-1);
     };
 
 
 
-for (let i = 0; i<= texte.length; i++){
-if (texte.length<120){
+
+if (texte.length<10){
     console.log('le texte est trop court');
     sc.close();
     return;
 }
-}
+
 // Tableau de 26 compteurs
     const compteur = Array(26).fill(0);
-
+console.log(Array(26).fill(0));
     // Parcours du texte
     for (let i = 0; i < texte.length; i++) {
         const c = texte[i].toLowerCase();
@@ -47,5 +50,5 @@ if (texte.length<120){
 
 
     sc.close();
-};
+}
 main();
