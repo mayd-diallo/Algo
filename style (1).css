@@ -1,0 +1,101 @@
+* {
+
+   box-sizing: border-box; 
+}
+body{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+background-color: #f0f2f5;
+color: #333;
+margin:0;
+display: flex;
+flex-direction:column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+
+}
+#business-card {
+    width: 780px;
+    height:300px;
+    background: linear-gradient(130deg, #4caf50, #8bc34a);
+    color: #fff;
+    border-radius: 15px;
+    box-shadow:  8px 8px 20px rgba(0,0,0, 0.8) ;
+     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+.tagline {
+font-size: 1.1em;
+font-weight: 300;
+margin-bottom: 15px;
+opacity: 0.9;
+font-style: italic;
+}
+
+.description
+{
+max-width: 780px;
+margin: 30px auto 0 auto;
+padding: 20px;
+background-color: #fff;
+border-radius: 15px;
+line-height: 1.6;
+font-size: 1rem;
+color: #555;
+text-align: justify;
+box-shadow:  8px 8px 20px rgba(0,0,0, 0.5) ;
+}
+.card-content {
+   
+text-align: left;
+padding: 20px;
+}
+.name {
+    font-size: 2.5em;
+margin: 0 0 5px;
+font-weight: 700;
+line-height: 1.1;
+}
+.title
+{font-size: 1.5;
+margin: 0 0 10px;
+font-weight: 400;
+opacity: 0.9;
+}
+.age{
+font-size: 1.1em;
+margin-bottom: 20px;
+opacity: 0.8;
+}
+.contact-info p {
+
+    margin: 8px 0;
+    font-size: 1em;
+ display: flex;
+ align-items: center;
+}
+
+.contact-info .icon {
+margin-right: 10px;
+font-size: 1.2em;
+color: #fff;
+}
+.card-image{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.profile-img{
+   width: 120px;
+   height: 120px;
+   border-radius: 50%;
+   border:2px solid rgba(255,255,255, 0.8);
+   box-shadow:8px 8px 20px rgba(0,0,0, 0.5) ;
+}
