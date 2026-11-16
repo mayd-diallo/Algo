@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demande de Devis</title>
+    <script src="assets/js/script.js" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <h1> Fomulaire de devis</h1>
+    <fieldset> <legend>Coordonnées entreprise demande: </legend>
+      <form action="#" method="post"  enctype="multipart/form-data" >
+     <input type="text" name="firstName" id="firstName" placeholder="Prénom" required  maxlength="50">
+     <input type="text" name="lastName" id="lastName" placeholder="Nom" required  maxlength="50">    
+     <div>
+     <input type="email" name="mail" id="mail"  placeholder="Email"  required>   
+    </div>
+    <div>
+     <input type="tel" name="phone" id="phone" placeholder="Tel." pattern="0[1-7|9][0-9\.]{8}" required > 
+     <input type="text" name="company" id="company"  maxlength="50" placeholder="Société/collectivité" >
+    </div>  
+        <textarea name="message" id="message" rows="4" >Message : 
+            
+        </textarea>
+     <div>
+        <p>Comment avez-vous connu notre agence ?</p>
+            <select name="prescripteur" id="prescripteur">
+                <option value="1" selected>--merci de sélectionner une option --</option>
+            </select>
+     </div>       
+        <div>
+             <p>Vous êtes intéressé par :</p>
+                <select name="projet" id="projet">
+                <option value="0">--merci de sélectionner une option</option>
+                </select>
+        </div>
+        <div>
+            <label for="cgv" >   
+                <input type="checkbox" name="cgv" id="cgv" checked>
+                En envoyant ce formulaire...  
+
+
+            </label>
+
+        </div>
+
+      </form>      
+
+
+
+    </fieldset>
+
+
+</body>
+</html>
